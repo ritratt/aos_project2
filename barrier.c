@@ -2,74 +2,67 @@
 #include <stdlib.h>
 #include <omp.h>
 
-#define NUM_THREADS 2 
+#define NUM_THREADS 8 
 
-int *count, *sense;
+int count, sense, cross_count;
 
-void barrier_naive(int *count) {
-	int c = *count;
-	if(*count == 1) {
-		c--;
-		*count = c;
-		printf("So count is %d.\n", *count);
-		*count = NUM_THREADS;
-		printf("And now count is %d.\n", *count);
+void barrier_naive() 
+{
+
+	if(count == 1) {
+		#pragma omp atomic
+			count--;
+		printf("So count is %d.\n", count);
+		while(cross_count != NUM_THREADS - 1);
+		#pragma omp atomic
+			count += NUM_THREADS;
+		printf("And now count is %d.\n", count);
 	}
 	else {
-		c--;
-		*count = c;
-		while(*count > 0) {
-			//printf("Count not zero.\n");
-		}
-		
-		while(*count != NUM_THREADS);
-		
+		#pragma omp atomic
+			count--;
+		while(count > 0); 
+		#pragma omp atomic
+			cross_count++;
+		while(count != NUM_THREADS);
 	}
-
-		//spinning
 }		
 
-void barrier_locksense(int *count, int *sense){
-	
-	int temp = (int) *sense;
-	int c = *count;
-	//printf("Count before is %d\n", *count);
-	if(*count == 1) {
-		c--;
-		*count = c;
-		if(*sense == 1)
-			*sense = 0;
-		else if(*sense == 0)
-			*sense = 1;
-	}
-	else {
-		c--;
-		*count = c;
-	}
+void barrier_locksense(){
 
-	//printf("Count is now %d\n", *count);
-	while(temp == *sense);
-	//	printf("spinning\n");
-	printf("Barrier done for %d\n", omp_get_thread_num());
-	
+        int temp = sense;
+        if(count == 1) {
+                count--;
+                if(sense == 1)
+                        sense = 0;
+                else if(sense == 0)
+                        sense = 1;
+        }
+        else {
+		#pragma omp atomic
+                	count--;
+        }
+
+        while(temp == sense);
+
 }
 
-int main() {
+int main() 
+{
 	omp_set_num_threads(NUM_THREADS);
-	count = malloc(sizeof(int));
-	sense = malloc(sizeof(int));
-	
-	*count = NUM_THREADS;
-	*sense = 1;
-	
+		
+	count = NUM_THREADS;
+	cross_count = 0;
+	sense = 0;
+
 	#pragma omp parallel
 	{
 		int id = omp_get_thread_num();
 		printf("Sleeping in %d\n", id);
 		sleep((id + 1) * 3);
 		printf("%d awake\n", id);
-		//barrier_locksense(count, sense);
-		barrier_naive(count);
+//		barrier_naive();	
+		barrier_locksense();
 		printf("%d done.\n", id);
 	}
 	printf("Done\n");
