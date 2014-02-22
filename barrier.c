@@ -28,44 +28,54 @@ void barrier_naive()
 	}
 }		
 
-void barrier_locksense(){
+void barrier_locksense() {
 
         int temp = sense;
         if(count == 1) {
                 count--;
-                if(sense == 1)
+		count = NUM_THREADS;
+                if(sense == 1) {
                         sense = 0;
-                else if(sense == 0)
+		}
+                else if(sense == 0) {
                         sense = 1;
+		}
         }
         else {
 		#pragma omp atomic
                 	count--;
         }
-
+	
         while(temp == sense);
-
+	
 }
 
 int main() 
 {
+	int i;
+	
 	omp_set_num_threads(NUM_THREADS);
 		
 	count = NUM_THREADS;
 	cross_count = 0;
 	sense = 0;
 
+	clock_t start = clock();
 	#pragma omp parallel
 	{
 		int id = omp_get_thread_num();
 		printf("Sleeping in %d\n", id);
-		sleep((id + 1) * 3);
+		sleep(id);
 		printf("%d awake\n", id);
 //		barrier_naive();	
-		barrier_locksense();
-		printf("%d done.\n", id);
+		for(i = 0; i < 3; i++) {
+		//	printf("%d\n", i);
+			barrier_locksense();
+		}
 	}
-	printf("Done\n");
+	clock_t end = clock();
+	float seconds = (float)(end - start);
+	printf("Time taken = %f\n", seconds);
 	return 0;
 }
 
