@@ -1,0 +1,369 @@
+Adding user rsatpute3 to group authjobs
+Got 1 threads
+0 sleeping.
+0 awake.
+1 sleeping.
+2 sleeping.
+partner flag:1 parity = 0 round = 0
+3 sleeping.
+5 sleeping.
+4 sleeping.
+1 awake.
+partner flag:1 parity = 0 round = 0
+partner flag:1 parity = 0 round = 1
+2 awake.
+partner flag:1 parity = 0 round = 0
+partner flag:1 parity = 0 round = 1
+3 awake.
+partner flag:1 parity = 0 round = 0
+partner flag:1 parity = 0 round = 1
+partner flag:0 parity = 0 round = 2
+Barrier 1 done for thread 3.
+3 sleeping.
+4 awake.
+partner flag:1 parity = 0 round = 0
+partner flag:1 parity = 0 round = 1
+partner flag:0 parity = 0 round = 2
+Barrier 1 done for thread 4.
+4 sleeping.
+5 awake.
+partner flag:1 parity = 0 round = 0
+partner flag:1 parity = 0 round = 1
+partner flag:0 parity = 0 round = 2
+partner flag:0 parity = 0 round = 2
+partner flag:1 parity = 0 round = 1
+partner flag:0 parity = 0 round = 2
+Barrier 1 done for thread 2.
+2 sleeping.
+partner flag:0 parity = 0 round = 2
+Barrier 1 done for thread 1.
+1 sleeping.
+Barrier 1 done for thread 5.
+5 sleeping.
+Barrier 1 done for thread 0.
+0 sleeping.
+0 awake.
+partner flag:1 parity = 1 round = 0
+3 awake.
+partner flag:1 parity = 1 round = 0
+1 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+2 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+partner flag:1 parity = 1 round = 2
+Barrier 2 done for thread 1.
+1 sleeping.
+4 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+Barrier 2 done for thread 2.
+2 sleeping.
+1 awake.
+partner flag:0 parity = 1 round = 0
+5 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+Barrier 2 done for thread 5.
+5 sleeping.
+partner flag:1 parity = 1 round = 2
+Barrier 2 done for thread 4.
+4 sleeping.
+Barrier 2 done for thread 0.
+0 sleeping.
+0 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+Barrier 2 done for thread 3.
+3 sleeping.
+2 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+3 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+4 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+5 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+partner flag:0 parity = 1 round = 2
+partner flag:0 parity = 1 round = 2
+Barrier 3 done for thread 3.
+Barrier 3 done for thread 5.
+partner flag:0 parity = 1 round = 2
+Barrier 3 done for thread 0.
+Barrier 3 done for thread 4.
+Barrier 3 done for thread 1.
+5 sleeping.
+Barrier 3 done for thread 2.
+4 sleeping.
+3 sleeping.
+1 sleeping.
+2 sleeping.
+0 sleeping.
+0 awake.
+partner flag:1 parity = 1 round = 0
+1 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+2 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+3 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+4 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+5 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+partner flag:1 parity = 1 round = 2
+partner flag:1 parity = 1 round = 2
+Barrier 4 done for thread 3.
+Barrier 4 done for thread 5.
+partner flag:1 parity = 1 round = 2
+3 sleeping.
+5 sleeping.
+Barrier 4 done for thread 2.
+Barrier 4 done for thread 1.
+1 sleeping.
+Barrier 4 done for thread 4.
+2 sleeping.
+4 sleeping.
+Barrier 4 done for thread 0.
+0 sleeping.
+0 awake.
+partner flag:0 parity = 1 round = 0
+1 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+2 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+3 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+4 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+5 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+partner flag:0 parity = 1 round = 2
+Barrier 5 done for thread 0.
+partner flag:0 parity = 1 round = 2
+0 sleeping.
+partner flag:0 parity = 1 round = 2
+Barrier 5 done for thread 3.
+Barrier 5 done for thread 2.
+0 awake.
+Barrier 5 done for thread 1.
+2 sleeping.
+Barrier 5 done for thread 5.
+Barrier 5 done for thread 4.
+1 sleeping.
+3 sleeping.
+5 sleeping.
+4 sleeping.
+partner flag:1 parity = 1 round = 0
+1 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+2 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+3 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+4 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+5 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+partner flag:1 parity = 1 round = 2
+Barrier 6 done for thread 0.
+Barrier 6 done for thread 2.
+0 sleeping.
+2 sleeping.
+0 awake.
+partner flag:0 parity = 1 round = 1
+partner flag:0 parity = 1 round = 0
+Barrier 6 done for thread 4.
+4 sleeping.
+partner flag:1 parity = 1 round = 2
+partner flag:1 parity = 1 round = 2
+Barrier 6 done for thread 3.
+3 sleeping.
+Barrier 6 done for thread 5.
+5 sleeping.
+Barrier 6 done for thread 1.
+1 sleeping.
+1 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+2 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+3 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+4 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+5 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+partner flag:0 parity = 1 round = 2
+Barrier 7 done for thread 1.
+partner flag:0 parity = 1 round = 2
+1 sleeping.
+Barrier 7 done for thread 0.
+0 sleeping.
+0 awake.
+partner flag:0 parity = 1 round = 2
+Barrier 7 done for thread 3.
+Barrier 7 done for thread 4.
+3 sleeping.
+Barrier 7 done for thread 2.
+4 sleeping.
+2 sleeping.
+partner flag:1 parity = 1 round = 0
+Barrier 7 done for thread 5.
+5 sleeping.
+1 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+2 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+3 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+4 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+5 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+partner flag:1 parity = 1 round = 2
+partner flag:0 parity = 1 round = 1
+Barrier 8 done for thread 2.
+Barrier 8 done for thread 4.
+Barrier 8 done for thread 0.
+4 sleeping.
+0 sleeping.
+partner flag:1 parity = 1 round = 2
+2 sleeping.
+partner flag:1 parity = 1 round = 2
+Barrier 8 done for thread 3.
+3 sleeping.
+Barrier 8 done for thread 5.
+5 sleeping.
+Barrier 8 done for thread 1.
+0 awake.
+partner flag:0 parity = 1 round = 0
+1 sleeping.
+1 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+2 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+3 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+4 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+5 awake.
+partner flag:0 parity = 1 round = 0
+partner flag:1 parity = 1 round = 1
+partner flag:1 parity = 1 round = 1
+partner flag:0 parity = 1 round = 2
+partner flag:0 parity = 1 round = 2
+partner flag:0 parity = 1 round = 2
+Barrier 9 done for thread 2.
+Barrier 9 done for thread 4.
+partner flag:0 parity = 1 round = 2
+Barrier 9 done for thread 0.
+4 sleeping.
+Barrier 9 done for thread 1.
+0 sleeping.
+0 awake.
+partner flag:1 parity = 1 round = 0
+2 sleeping.
+Barrier 9 done for thread 3.
+1 sleeping.
+3 sleeping.
+Barrier 9 done for thread 5.
+5 sleeping.
+1 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+2 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+3 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+4 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+5 awake.
+partner flag:1 parity = 1 round = 0
+partner flag:0 parity = 1 round = 1
+partner flag:0 parity = 1 round = 1
+partner flag:1 parity = 1 round = 2
+partner flag:1 parity = 1 round = 2
+Barrier 10 done for thread 2.
+partner flag:1 parity = 1 round = 2
+Barrier 10 done for thread 4.
+partner flag:1 parity = 1 round = 2
+Barrier 10 done for thread 1.
+Barrier 10 done for thread 0.
+Time take = 50
+Time take = 50
+Barrier 10 done for thread 3.
+Barrier 10 done for thread 5.
+Time take = 50
+Time take = 50
+Time take = 50
+Time take = 50
+Removing user rsatpute3 from group authjobs

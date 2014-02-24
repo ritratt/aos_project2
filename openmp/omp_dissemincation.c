@@ -51,12 +51,19 @@ void dissemination_barrier(flags* localflags, int *sense, int * parity)
 	}
 }
 
-int main()
+int main(int argc, char *args[])
 {
-	omp_set_num_threads(NUM_THREADS);
 	int size = omp_get_num_threads();
 	printf("Got %d threads\n", size);
 	dissemination_barrier_init();
+	
+	if(argc != 3) {
+		printf("Usage ./diss_omp numthreads numbarriers\n");
+		return 1;
+	}
+	omp_set_num_threads(NUM_THREADS);
+	int numbarriers = atoi(args[2]);
+	printf("Running with %d barriers.\n", numbarriers);
 	#pragma omp parallel shared(allnodes)
 	{
 		int id = omp_get_thread_num();
@@ -82,8 +89,9 @@ int main()
 				}
 			}	
 		}
+		int start_time = omp_get_wtime();
 		int times;
-		for(times = 0; times < 4; times++)
+		for(times = 0; times < numbarriers; times++)
 		{
 			printf("%d sleeping.\n", id);
 			sleep(id);
@@ -98,5 +106,7 @@ int main()
 */			dissemination_barrier(localflags, &sense, &parity);
 			printf("Barrier %d done for thread %d.\n", times + 1, id);
 		}
+		int elapsed_time = omp_get_wtime() - start_time;
+		printf("Time take = %d\n", elapsed_time);
 	}	
 }
