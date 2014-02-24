@@ -21,7 +21,7 @@ void dissemination_barrier_init()
         {
         	for(j = 0; j < 2; j++)
                 {
-                	for(k = 0; k < 2; k++)
+                	for(k = 0; k < ROUNDS; k++)
                         {
                         	allnodes[i].myflags[j][k] = 0;
                         }
