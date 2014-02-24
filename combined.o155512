@@ -1,0 +1,50 @@
+Adding user rsatpute3 to group authjobs
+Initializing rank 0
+Thread No. 0 sleeping
+0 awake
+Initializing rank 1
+Thread No. 1 sleeping
+Barrier 1 completed for 0
+Thread No. 0 sleeping
+0 awake
+1 awake
+Barrier 1 completed for 1
+Thread No. 1 sleeping
+Barrier 2 completed for 0
+Thread No. 0 sleeping
+0 awake
+1 awake
+Barrier 2 completed for 1
+Thread No. 1 sleeping
+Barrier 3 completed for 0
+Thread No. 0 sleeping
+0 awake
+1 awake
+Barrier 3 completed for 1
+Thread No. 1 sleeping
+Barrier 4 completed for 0
+Thread No. 0 sleeping
+0 awake
+1 awake
+Barrier 4 completed for 1
+Thread No. 1 sleeping
+Barrier 5 completed for 0
+Thread No. 0 sleeping
+0 awake
+1 awake
+Barrier 5 completed for 1
+Thread No. 1 sleeping
+Barrier 6 completed for 0
+Thread No. 0 sleeping
+0 awake
+1 awake
+Barrier 6 completed for 1
+Thread No. 1 sleeping
+Barrier 7 completed for 0
+Thread No. 0 sleeping
+0 awake
+1 awake
+Barrier 7 completed for 1
+Thread No. 1 sleeping
+2 total processes killed (some possibly by mpirun during cleanup)
+Removing user rsatpute3 from group authjobs

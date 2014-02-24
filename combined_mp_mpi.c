@@ -90,35 +90,47 @@ int main(int argc, char **argv)
 	printf("Initializing proc rank %d\n", mpi_rank);	
 	mpi_dissemination_barrier_init();	
 
+	if(argc != 2) {
+		printf("Usage ./combine_barrier numbarriers\n");
+		return 1;
+	}
+	int numbarriers = atoi(argv[1]);
 	//Initialization for OMP
 	omp_set_num_threads(NUM_THREADS);
 	omp_dissemination_barrier_init();
 
-	#pragma omp parallel
-	{
-		int id = omp_get_thread_num();
-                int num_threads = omp_get_num_threads();
-                int parity = 0;
-                int sense = 1;
-                int i, j, k;
-                flags* localflags = &allnodes[id];
+	int i, start_time, elapsed_time;
+	start_time = MPI_Wtime();
+	for(i = 0; i < numbarriers; i++) {
+		#pragma omp parallel
+		{
+			int id = omp_get_thread_num();
+			int num_threads = omp_get_num_threads();
+			int parity = 0;
+			int sense = 1;
+			int i, j, k;
+			flags* localflags = &allnodes[id];
 
-		#pragma omp critical
-        	        for(i = 0; i < NUM_THREADS; i++)
-                	        for(j = 0; j < OMP_ROUNDS; j++)
-                        	        for(k = 0; k < 2; k++)//Parity
-                                	        if(i == ((id + (int)pow((double)2, (double)j)) % NUM_THREADS))
-                                        	        allnodes[id].partnerflags[k][j] = &allnodes[i].myflags[k][j];
+			#pragma omp critical
+				for(i = 0; i < NUM_THREADS; i++)
+					for(j = 0; j < OMP_ROUNDS; j++)
+						for(k = 0; k < 2; k++)//Parity
+							if(i == ((id + (int)pow((double)2, (double)j)) % NUM_THREADS))
+								allnodes[id].partnerflags[k][j] = &allnodes[i].myflags[k][j];
+			
+			printf("MPI rank %d OMP thread %d sleeping.\n", mpi_rank, id);
+			sleep(mpi_rank + id);
+			printf("MPI rank %d OMP thread %d awake.\n", mpi_rank, id);
+			omp_dissemination_barrier(localflags, &sense, &parity);
+			printf("OMP_Barrier done for MPI rank %d OMP thread %d.\n", mpi_rank, id);
+		}
 		
-		printf("MPI rank %d OMP thread %d sleeping.\n", mpi_rank, id);
-                sleep(mpi_rank + id);
-                printf("MPI rank %d OMP thread %d awake.\n", mpi_rank, id);
-		omp_dissemination_barrier(localflags, &sense, &parity);
-                printf("OMP_Barrier done for MPI rank %d OMP thread %d.\n", mpi_rank, id);
+		mpi_dissemination_barrier();
+		printf("MPI Barrier completed for MPI rank %d\n", mpi_rank);
 	}
-	
-	mpi_dissemination_barrier();
-	printf("MPI Barrier completed for MPI rank %d\n", mpi_rank);
+	elapsed_time = MPI_Wtime() - start_time;
+	printf("Time take by %d = %d\n",mpi_rank, elapsed_time);
+	//if(elapsed_time % 10 == 0)
  	printf("Finalizing rank %d\n", mpi_rank);
   	MPI_Finalize();
   	return 0;

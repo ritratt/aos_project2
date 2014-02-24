@@ -1,0 +1,388 @@
+Adding user rsatpute3 to group authjobs
+Initializing proc rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 0 OMP thread 0 awake.
+MPI rank 0 OMP thread 5 sleeping.
+Initializing proc rank 1
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 1 awake.
+MPI rank 1 OMP thread 0 awake.
+MPI rank 0 OMP thread 2 awake.
+MPI rank 1 OMP thread 1 awake.
+MPI rank 0 OMP thread 3 awake.
+MPI rank 1 OMP thread 2 awake.
+MPI rank 0 OMP thread 4 awake.
+MPI rank 1 OMP thread 3 awake.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 4 awake.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 0 sleeping.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI Barrier completed for MPI rank 0
+MPI rank 0 OMP thread 0 sleeping.
+MPI rank 0 OMP thread 0 awake.
+MPI rank 0 OMP thread 2 sleeping.
+OMP_Barrier done for MPI rank 0 OMP thread 0.
+MPI rank 0 OMP thread 4 sleeping.
+MPI rank 0 OMP thread 5 sleeping.
+MPI rank 0 OMP thread 3 sleeping.
+MPI rank 0 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+MPI rank 1 OMP thread 5 sleeping.
+MPI rank 1 OMP thread 3 sleeping.
+MPI rank 1 OMP thread 0 sleeping.
+MPI rank 1 OMP thread 1 sleeping.
+MPI rank 1 OMP thread 4 sleeping.
+MPI rank 1 OMP thread 2 sleeping.
+MPI rank 0 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 1.
+MPI rank 1 OMP thread 0 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 0.
+MPI rank 0 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 2.
+MPI rank 1 OMP thread 1 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 1.
+MPI rank 0 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 3.
+MPI rank 1 OMP thread 2 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 2.
+MPI rank 0 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 4.
+MPI rank 1 OMP thread 3 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 3.
+MPI rank 0 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 0 OMP thread 5.
+MPI rank 1 OMP thread 4 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 4.
+MPI Barrier completed for MPI rank 0
+Time take by 0 = 60
+Finalizing rank 0
+MPI rank 1 OMP thread 5 awake.
+OMP_Barrier done for MPI rank 1 OMP thread 5.
+MPI Barrier completed for MPI rank 1
+Time take by 1 = 60
+Finalizing rank 1
+Removing user rsatpute3 from group authjobs
