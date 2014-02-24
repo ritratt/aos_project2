@@ -45,8 +45,14 @@ int main(int argc, char **argv)
 	        printf("Thread No. %d sleeping\n", rank);
 	        sleep(rank);
 	        printf("%d awake\n", rank);
+		if(rank == 0)
+		{
+			while(1)
+			{
+
+			}
+		}
 		dissemination_barrier();
-		MPI_Barrier(MPI_COMM_WORLD);
 		printf("Barrier %d completed for %d\n", i+1, rank);
 	}
  	printf("Finalizing rank %d\n", rank);
