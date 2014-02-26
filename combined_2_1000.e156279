@@ -1,0 +1,7 @@
+[jinx2][[10001,1],0][btl_openib_component.c:1493:init_one_device] error obtaining device context for mlx4_0 errno says No such file or directory
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   jinx2
+  Local device: mlx4_0
+--------------------------------------------------------------------------

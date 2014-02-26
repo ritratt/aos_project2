@@ -1,0 +1,7 @@
+[jinx9][[40923,1],0][btl_openib_component.c:1493:init_one_device] error obtaining device context for mlx4_0 errno says Permission denied
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   jinx9
+  Local device: mlx4_0
+--------------------------------------------------------------------------

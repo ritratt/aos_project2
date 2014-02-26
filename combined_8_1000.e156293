@@ -1,0 +1,11 @@
+[jinx7][[27972,1],2][btl_openib_component.c:1493:init_one_device] error obtaining device context for mlx4_0 errno says Permission denied
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   jinx7
+  Local device: mlx4_0
+--------------------------------------------------------------------------
+[jinx9][[27972,1],4][btl_openib_component.c:1493:init_one_device] error obtaining device context for mlx4_0 errno says Permission denied
+[jinx2][[27972,1],0][btl_openib_component.c:1493:init_one_device] error obtaining device context for mlx4_0 errno says No such file or directory
+[jinx2:20120] 2 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+[jinx2:20120] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages

@@ -1,0 +1,6 @@
+Adding user rsatpute3 to group authjobs
+OMP Process = 0 Time = 131.000000
+MPI Process = 0 Time = 24562.000000
+OMP Process = 1 Time = 81.500000
+MPI Process = 1 Time = 25784.000000
+Removing user rsatpute3 from group authjobs

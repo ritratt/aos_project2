@@ -53,10 +53,12 @@ void dissemination_barrier(flags* localflags, int *sense, int * parity)
 
 int main(int argc, char *args[])
 {
-	 if(argc != 3) {
+	if(argc != 3) {
                 printf("Usage ./diss_omp numthreads numbarriers\n");
                 return 1;
         }
+	struct timeval tv;
+	//unsigned long total_time, start_time, end_time;
         omp_set_num_threads(NUM_THREADS);
         int numbarriers = atoi(args[2]);
         printf("Running with %d barriers.\n", numbarriers);
@@ -64,7 +66,6 @@ int main(int argc, char *args[])
 	int size = omp_get_num_threads();
 	//printf("Got %d threads\n", size);
 	dissemination_barrier_init();
-	int start_time = omp_get_wtime();
 	#pragma omp parallel
 	{
 		int id = omp_get_thread_num();
@@ -73,7 +74,7 @@ int main(int argc, char *args[])
 		int sense = 1;
 		int i, j, k;
 		flags* localflags = &allnodes[id];
-
+		double total_time = 0;
 		int times;
 		for(times = 0; times < numbarriers; times++)
 		{	
@@ -94,20 +95,20 @@ int main(int argc, char *args[])
 					}
 				}	
 			}
-			printf("%d sleeping.\n", id);
-			sleep(id);
-			printf("%d awake.\n", id);
-/*			if(id == 0)
-			{
-				while(1)
-				{
-
-				}
-			}
-*/			dissemination_barrier(localflags, &sense, &parity);
-			printf("Barrier %d done for thread %d.\n", times + 1, id);
+			//printf("%d sleeping.\n", id);
+			//sleep(id);
+			//printf("%d awake.\n", id);
+			int res1 = gettimeofday(&tv, NULL);
+			//long start_time = tv.tv_usec;
+			double start_time = (double) omp_get_wtime();
+			dissemination_barrier(localflags, &sense, &parity);
+			double end_time = (double) omp_get_wtime();
+			int res2 = gettimeofday(&tv, NULL);
+			//long end_time = tv.tv_usec;
+			total_time = total_time + (end_time - start_time);
+			//printf("Barrier %d done for thread %d.\n", times + 1, id);
 		}
+		printf("Total time for id = %d is %e \n", id, total_time);
 	}	
-	int elapsed_time = omp_get_wtime() - start_time;
-	printf("Elapsed time = %d.\n", elapsed_time);
+//	printf("Elapsed time = %u.\n", total_time/NUM_THREADS);
 }

@@ -1,0 +1,14 @@
+Adding user rsatpute3 to group authjobs
+NUM_THREADS is 2 and OMP_ROUND is 1.
+NUM_THREADS is 2 and OMP_ROUND is 1.
+NUM_THREADS is 2 and OMP_ROUND is 1.
+NUM_THREADS is 2 and OMP_ROUND is 1.
+OMP Process = 0 Time = 6.224578e-04
+MPI Process = 0 Time = 8.376050e-02
+OMP Process = 3 Time = 2.157064e-04
+MPI Process = 3 Time = 8.527780e-02
+OMP Process = 2 Time = 4.099011e-04
+MPI Process = 2 Time = 8.365750e-02
+OMP Process = 1 Time = 6.072680e-04
+MPI Process = 1 Time = 8.266950e-02
+Removing user rsatpute3 from group authjobs

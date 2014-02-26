@@ -4,8 +4,11 @@
 #include <math.h>
 #include <omp.h>
 
-#define NUM_THREADS 6
-#define OMP_ROUNDS 3
+#define NUM_THREADS 2
+#define OMP_ROUNDS 1
+
+//int NUM_THREADS;
+//int OMP_ROUNDS;
 
 //Global vars reqd for mpi
 int mpi_rank, mpi_size, mpi_sense, tag;
@@ -83,27 +86,34 @@ void mpi_dissemination_barrier()
 
 int main(int argc, char **argv)
 {
+	printf("NUM_THREADS is %d and OMP_ROUND is %d.\n", NUM_THREADS, OMP_ROUNDS);
 	//Initialization for MPI
   	MPI_Init(&argc, &argv);
   	MPI_Comm_size(MPI_COMM_WORLD, &mpi_size);
   	MPI_Comm_rank(MPI_COMM_WORLD, &mpi_rank);
-	printf("Initializing proc rank %d\n", mpi_rank);	
+	//printf("Initializing proc rank %d\n", mpi_rank);	
 	mpi_dissemination_barrier_init();	
 
-	if(argc != 2) {
-		printf("Usage ./combine_barrier numbarriers\n");
+	struct timeval mpi_tv;
+	if(argc != 3) {
+		printf("Usage ./combine_barrier numthreads numbarriers\n");
 		return 1;
 	}
-	int numbarriers = atoi(argv[1]);
+	int numbarriers = atoi(argv[2]);
 	//Initialization for OMP
 	omp_set_num_threads(NUM_THREADS);
 	omp_dissemination_barrier_init();
-
+	double omp_total_time[NUM_THREADS];
+	int j;
+	for(j = 0; j < NUM_THREADS; j++)
+		omp_total_time[j] = 0.0;
 	int i, start_time, elapsed_time;
-	start_time = MPI_Wtime();
+	double total_mpi_time = 0.0;
 	for(i = 0; i < numbarriers; i++) {
 		#pragma omp parallel
 		{
+			double total_omp_time = 0.0;
+		 	struct timeval omp_tv;
 			int id = omp_get_thread_num();
 			int num_threads = omp_get_num_threads();
 			int parity = 0;
@@ -118,20 +128,38 @@ int main(int argc, char **argv)
 							if(i == ((id + (int)pow((double)2, (double)j)) % NUM_THREADS))
 								allnodes[id].partnerflags[k][j] = &allnodes[i].myflags[k][j];
 			
-			printf("MPI rank %d OMP thread %d sleeping.\n", mpi_rank, id);
-			sleep(mpi_rank + id);
-			printf("MPI rank %d OMP thread %d awake.\n", mpi_rank, id);
+			//printf("MPI rank %d OMP thread %d sleeping.\n", mpi_rank, id);
+			//sleep(mpi_rank + id);
+			//printf("MPI rank %d OMP thread %d awake.\n", mpi_rank, id);
+			gettimeofday(&omp_tv, NULL);
+			//float time1 = (float) omp_tv.tv_usec;
+			double time1 = omp_get_wtime();
 			omp_dissemination_barrier(localflags, &sense, &parity);
-			printf("OMP_Barrier done for MPI rank %d OMP thread %d.\n", mpi_rank, id);
+			double time2 = omp_get_wtime();
+			gettimeofday(&omp_tv, NULL);
+			//float time2 = (float) omp_tv.tv_usec;
+			omp_total_time[id] = omp_total_time[id] + (time2 - time1);
+			//printf("OMP_Barrier done for MPI rank %d OMP thread %d.\n", mpi_rank, id);
 		}
-		
+		gettimeofday(&mpi_tv, NULL);
+		//float time1_mpi = (float) mpi_tv.tv_usec;
+		double time1_mpi = MPI_Wtime();
 		mpi_dissemination_barrier();
-		printf("MPI Barrier completed for MPI rank %d\n", mpi_rank);
+		double time2_mpi = MPI_Wtime();
+		gettimeofday(&mpi_tv, NULL);
+		//float time2_mpi = (float) mpi_tv.tv_usec;
+		total_mpi_time = total_mpi_time + (time2_mpi - time1_mpi);
+		//printf("MPI Barrier completed for MPI rank %d\n", mpi_rank);
 	}
-	elapsed_time = MPI_Wtime() - start_time;
-	printf("Time take by %d = %d\n",mpi_rank, elapsed_time);
+	float omp_final_total_time;
+	for(i = 0; i < NUM_THREADS; i++) {
+		omp_final_total_time = omp_final_total_time + omp_total_time[i];
+	}
+	omp_final_total_time = omp_final_total_time/NUM_THREADS;
+	printf("OMP Process = %d Time = %e\n", mpi_rank, omp_final_total_time);
+	printf("MPI Process = %d Time = %e\n",mpi_rank, total_mpi_time);
 	//if(elapsed_time % 10 == 0)
- 	printf("Finalizing rank %d\n", mpi_rank);
+ 	//printf("Finalizing rank %d\n", mpi_rank);
   	MPI_Finalize();
   	return 0;
 }
